@@ -23,6 +23,22 @@ params:
   centerTheme: true
   favicon: img/theme-colors/profile.png
 
+  comments:
+    # https://giscus.app/
+    giscus:
+      repo: bl4ko/bl4og
+      repo_id: R_kgDOKh_b5Q
+      category: Announcements
+      category_id: DIC_kwDOKh_b5c4CaPX2
+      mapping: pathname
+      strict: 0
+      reactions-enabled: 1
+      emit-metadata: 0
+      input-position: bottom
+      theme: dark
+      lang: en
+      crossorigin: anonymous
+
 languages:
   en:
     languageName: English
@@ -46,4 +62,4 @@ languages:
         url: https://about.bl4ko.com
       - identifier: github
         name: Github
-        url: https://github.com/bl4ko/blog
+        url: https://github.com/bl4ko/bl4og

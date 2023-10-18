@@ -1,0 +1,4 @@
+{
+  "origins": ["https://blog.bl4ko.com"],
+  "originsRegex": ["http://localhost:[0-9]+"]
+}
