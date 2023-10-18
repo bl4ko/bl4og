@@ -1,0 +1,49 @@
+baseUrl: /
+languageCode: en-us
+theme: bl4og
+paginate: 4
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true # Render html in markdown: https://snippets.page/posts/fix-html-not-working-hugo/
+
+params:
+  # dir name of your blog content (default is `content/posts`)
+  contentTypeName: posts
+  # ["orange", "blue", "red", "green", "pink"]
+  themeColor: green
+  # if you set this to 0, only submenu trigger will be visible
+  showMenuItems: 3
+  # show selector to switch language
+  showLanguageSelector: false
+  # set theme to full screen width
+  fullWidthTheme: false
+  # center theme with default width
+  centerTheme: true
+  favicon: img/theme-colors/profile.png
+
+languages:
+  en:
+    languageName: English
+    title: Bl4ko's blog
+
+    params:
+      subtitle: Personal blog just for fun
+      keywords: ''
+      menuMore: Show more
+      readMore: Read more
+      readOtherPosts: Read other posts
+      olderPosts: Older posts
+      logo:
+        logoText: Bl4ko's blog
+        logoHomeLink: /
+
+    menu:
+      main:
+      - identifier: about
+        name: About
+        url: https://about.bl4ko.com
+      - identifier: github
+        name: Github
+        url: https://github.com/bl4ko/blog

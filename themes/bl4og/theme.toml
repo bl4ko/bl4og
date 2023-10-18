@@ -1,0 +1,13 @@
+name = "bl4og"
+license = "MIT"
+licenselink = "https://github.com/bl4ko/bl4og/blob/master/LICENSE.md"
+description = "A simple, retro theme for Hugo."
+homepage = "https://github.com/bl4ko/bl4og/"
+tags = ["blog", "clean", "customizable", "dark", "highlighting", "minimal", "monotone", "multilingual", "personal", "responsive", "simple", "technical", "retro"]
+features = ["blog", "shortcode", "syntax highlighting"]
+min_version = 0.90
+
+[author]
+  name = "bl4ko"
+  homepage = "https://about.bl4ko.com"
+  twitter = "https://twitter.com/bl4koo"
