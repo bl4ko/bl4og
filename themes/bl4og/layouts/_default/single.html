@@ -1,5 +1,5 @@
 {{ define "main" }}
-<article class="post">
+<article class="post" {{ if or (eq .Params.autonumbering true) (eq .Site.Params.autonumbering true) }}autonumbering {{ end }}>
   <h1 class="post-title">
     <a href="{{ .Permalink }}">{{ .Title | markdownify }}</a>
   </h1>
@@ -31,9 +31,9 @@
 
   {{ if (.Params.Toc | default .Site.Params.Toc) }}
     <div class="table-of-contents">
-      <h2>
+      <div class="toc-title">
         {{ (.Params.TocTitle | default .Site.Params.TocTitle) | default "Table of Contents" }}
-      </h2>
+      </div>
       {{ .TableOfContents }}
     </div>
   {{ end }}

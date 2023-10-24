@@ -134,6 +134,10 @@ paginate = 5
   # can be overridden in a page's front-matter
   # TocTitle = "Table of Contents" # default
 
+  # auto numbering the titles
+  # can be overridden in a page's front-matter
+  # autonumbering = false # Default
+
 
 [params.twitter]
   # set Twitter handles for Twitter cards
