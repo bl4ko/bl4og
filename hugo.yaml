@@ -4,6 +4,10 @@ theme: bl4og
 paginate: 4
 
 markup:
+  tableOfContents:
+    endLevel: 4
+    ordered: true
+    startLevel: 2
   goldmark:
     renderer:
       unsafe: true # Render html in markdown: https://snippets.page/posts/fix-html-not-working-hugo/
@@ -22,6 +26,8 @@ params:
   # center theme with default width
   centerTheme: true
   favicon: img/theme-colors/profile.png
+  Toc: true
+  TocTitle: "Table of Contents"
 
   comments:
     # https://giscus.app/
