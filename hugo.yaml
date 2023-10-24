@@ -52,7 +52,6 @@ languages:
 
     params:
       subtitle: Personal blog just for fun
-      keywords: ''
       menuMore: Show more
       readMore: Read more
       readOtherPosts: Read other posts

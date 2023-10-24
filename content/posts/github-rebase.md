@@ -4,6 +4,12 @@ date: "2023-10-24"
 author: bl4ko
 description: "In this post we will describe the weird behavior of Github's default rebase and merge strategy."
 slug: github-rebase-issue
+keywords:
+- git
+- github
+- rebase 
+- merge
+- solution
 tags:
 - git
 - github
