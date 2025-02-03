@@ -1,10 +1,10 @@
-FROM alpine:3.21.2 as builder
+FROM alpine:3.21.2 AS builder
 WORKDIR /app
 RUN apk add --no-cache hugo
 COPY . .
 RUN hugo --source=/app --destination=/app/public
 
-FROM nginx:1.27.3-alpine3.20-slim
+FROM nginxinc/nginx-unprivileged:1.27.3-alpine3.20-slim
 
 ARG VERSION
 ARG CREATED
@@ -21,15 +21,8 @@ LABEL \
   org.opencontainers.image.title="Bl4og" \
   org.opencontainers.image.description=""
 
-# Create a non-root user and group
-RUN addgroup -S nginx && adduser -S nginx -G nginx
-
-# Set permissions for the non-root user
-RUN chown -R nginx:nginx /usr/share/nginx/html /var/cache/nginx /var/run
-
-# Switch to the non-root user
 USER nginx
 
 COPY --from=builder /app/public /usr/share/nginx/html
-EXPOSE 80
+EXPOSE 8080
 CMD ["nginx", "-g", "daemon off;"]
