@@ -2,6 +2,7 @@
 # Edit at https://www.toptal.com/developers/gitignore?templates=hugo,visualstudiocode
 
 .pre-commit-trivy-cache
+.DS_Store
 
 ### Hugo ###
 # Generated files by hugo
