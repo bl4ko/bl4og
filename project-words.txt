@@ -1,0 +1,6 @@
+lycheeverse
+golangci
+ssot
+aquasecurity
+trivyfs
+trivyconfig

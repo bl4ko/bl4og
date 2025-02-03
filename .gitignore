@@ -1,6 +1,8 @@
 # Created by https://www.toptal.com/developers/gitignore/api/hugo,visualstudiocode
 # Edit at https://www.toptal.com/developers/gitignore?templates=hugo,visualstudiocode
 
+.pre-commit-trivy-cache
+
 ### Hugo ###
 # Generated files by hugo
 /public/

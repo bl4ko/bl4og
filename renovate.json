@@ -1,0 +1,41 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "baseBranches": [
+    "main"
+  ],
+  "extends": [
+    "config:recommended",
+    "docker:pinDigests",
+    "helpers:pinGitHubActionDigests",
+    ":pinDevDependencies"
+  ],
+  "packageRules": [
+    {
+      "automerge": true,
+      "automergeStrategy": "squash",
+      "groupName": "github actions",
+      "matchManagers": [
+        "github-actions"
+      ]
+    },
+    {
+      "automerge": true,
+      "automergeStrategy": "squash",
+      "groupName": "dockerfile dependencies",
+      "matchManagers": [
+        "dockerfile"
+      ]
+    },
+    {
+      "automerge": true,
+      "automergeStrategy": "squash",
+      "groupName": "semantic-release",
+      "matchManagers": [
+        "regex"
+      ]
+    }
+  ],
+  "pre-commit": {
+    "enabled": true
+  }
+}
