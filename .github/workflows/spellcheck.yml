@@ -1,11 +1,8 @@
-name: Check spelling with spellcheck
+name: Spellcheck Action
+permissions:
+  contents: read
 on:
-  pull_request:
-    branches:
-      - main
+  push:
 jobs:
   spellcheck:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4
-      - uses: streetsidesoftware/cspell-action@eb29b6a67d122d2e6af385ff16bdb200d93b2e54 # v7
+    uses: bl4ko/shared-actions/.github/workflows/spellcheck.yml@main

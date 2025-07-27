@@ -10,7 +10,7 @@ jobs:
   build:
     name: Build and push Docker image
     runs-on: ubuntu-latest
-    permissions: # Permissions for GITHUB_TOKEN
+    permissions:
       contents: read
       packages: write
 

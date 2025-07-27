@@ -1,0 +1,14 @@
+name: Links
+permissions:
+  contents: read
+on:
+  repository_dispatch:
+  workflow_dispatch:
+  schedule:
+    - cron: "00 18 * * *"
+
+jobs:
+  linkChecker:
+    uses: bl4ko/shared-actions/.github/workflows/links.yml@main
+    secrets:
+      SVC_TOKEN: ${{ secrets.SVC_TOKEN }}
