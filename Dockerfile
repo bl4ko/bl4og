@@ -1,4 +1,4 @@
-FROM alpine:3.23.0@sha256:eb37f58646a901dc7727cf448cae36daaefaba79de33b5058dab79aa4c04aefb AS builder
+FROM alpine:3.23.0@sha256:51183f2cfa6320055da30872f211093f9ff1d3cf06f39a0bdb212314c5dc7375 AS builder
 WORKDIR /app
 RUN apk add --no-cache hugo
 COPY . .
