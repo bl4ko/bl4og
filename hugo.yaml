@@ -1,7 +1,8 @@
 baseUrl: /
 languageCode: en-us
 theme: bl4og
-paginate: 4
+pagination:
+  pagerSize: 4
 
 markup:
   tableOfContents:
