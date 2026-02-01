@@ -1,10 +1,10 @@
-FROM alpine:3.23.2@sha256:865b95f46d98cf867a156fe4a135ad3fe50d2056aa3f25ed31662dff6da4eb62 AS builder
+FROM alpine:3.23 AS builder
 WORKDIR /app
 RUN apk add --no-cache hugo
 COPY . .
 RUN hugo --source=/app --destination=/app/public
 
-FROM nginxinc/nginx-unprivileged:1.27.3-alpine3.20-slim@sha256:24ae9a39acde5b55b877c7d2ced48549cfada5ae497a9fe2cd8a9c0cfc15919b
+FROM nginxinc/nginx-unprivileged:alpine-slim
 
 ARG VERSION
 ARG CREATED
