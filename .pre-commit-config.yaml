@@ -1,6 +1,6 @@
 repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
-    rev: v5.0.0
+    rev: v6.0.0
     hooks:
       - id: check-yaml
       - id: check-json
@@ -11,17 +11,17 @@ repos:
       - id: check-case-conflict
 
   - repo: https://github.com/gitleaks/gitleaks
-    rev: v8.28.0
+    rev: v8.30.0
     hooks:
       - id: gitleaks
 
   - repo: https://github.com/streetsidesoftware/cspell-cli
-    rev: v9.2.0
+    rev: v9.6.0
     hooks:
       - id: cspell
 
   - repo: https://github.com/mxab/pre-commit-trivy.git
-    rev: v0.15.0
+    rev: v0.17.0
     hooks:
       - id: trivyfs-docker
         args:
