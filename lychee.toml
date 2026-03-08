@@ -1,0 +1,6 @@
+# Exclude files with Hugo root-relative image paths
+# lychee can't resolve /path references without a Hugo build
+exclude_path = [
+  "content/posts/features.md",
+  "content/posts/github-rebase.md",
+]
