@@ -11,4 +11,5 @@ jobs:
   linkChecker:
     uses: bl4ko/shared-actions/.github/workflows/links.yml@main
     secrets:
-      SVC_TOKEN: ${{ secrets.SVC_TOKEN }}
+      APP_ID: ${{ secrets.APP_ID }}
+      APP_PRIVATE_KEY: ${{ secrets.APP_PRIVATE_KEY }}
