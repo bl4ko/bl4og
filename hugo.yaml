@@ -30,21 +30,6 @@ params:
   Toc: true
   TocTitle: "Table of Contents"
 
-  comments:
-    # https://giscus.app/
-    giscus:
-      repo: bl4ko/bl4og
-      repo_id: R_kgDOKh_b5Q
-      category: Announcements
-      category_id: DIC_kwDOKh_b5c4CaPX2
-      mapping: pathname
-      strict: 0
-      reactions-enabled: 1
-      emit-metadata: 0
-      input-position: bottom
-      theme: dark
-      lang: en
-      crossorigin: anonymous
 
 languages:
   en:
