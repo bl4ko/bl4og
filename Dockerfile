@@ -4,7 +4,7 @@ RUN apk add --no-cache hugo
 COPY . .
 RUN hugo --source=/app --destination=/app/public
 
-FROM nginxinc/nginx-unprivileged:alpine-slim@sha256:d9fa63891743a11eb56ca1b22d8cc227491df183ca3da2cf1bf2c6e010bf19a5
+FROM nginxinc/nginx-unprivileged:alpine-slim@sha256:90d82b3358df5758b3c57d20f2565082ce6f744906e7dc09afd0096c1b8eb2b5
 
 ARG VERSION
 ARG CREATED
