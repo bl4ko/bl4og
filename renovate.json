@@ -9,7 +9,18 @@
     "helpers:pinGitHubActionDigests",
     ":pinDevDependencies"
   ],
+  "platformAutomerge": true,
   "packageRules": [
+    {
+      "matchUpdateTypes": [
+        "minor",
+        "patch",
+        "pin",
+        "digest",
+        "pinDigest"
+      ],
+      "automerge": true
+    },
     {
       "automerge": true,
       "automergeStrategy": "squash",
@@ -38,5 +49,6 @@
   "pre-commit": {
     "enabled": true
   },
-  "minimumReleaseAge": "3 days"
+  "minimumReleaseAge": "3 days",
+  "rebaseWhen": "conflicted"
 }
