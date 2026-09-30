@@ -21,6 +21,8 @@ LABEL \
   org.opencontainers.image.title="Bl4og" \
   org.opencontainers.image.description=""
 
+USER root
+RUN apk upgrade --no-cache
 USER nginx
 
 COPY --from=builder /app/public /usr/share/nginx/html
