@@ -2,7 +2,7 @@ FROM alpine:3.24@sha256:294b683cb724975bec92580e1e685676bd4b50bda910ddb8c51d4cab
 WORKDIR /app
 RUN apk add --no-cache hugo
 COPY . .
-RUN hugo --source=/app --destination=/app/public
+RUN hugo --source=/app --destination=/app/public && sh /app/tests/metadata.sh /app/public
 
 FROM nginxinc/nginx-unprivileged:alpine-slim@sha256:f08c8378b2ac3a544e3e9ee664c3efb733b5aa53c774ca4ec8d5d0cc641d9e88
 
