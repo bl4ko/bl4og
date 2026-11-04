@@ -50,5 +50,6 @@
     "enabled": true
   },
   "minimumReleaseAge": "3 days",
-  "rebaseWhen": "conflicted"
+  "rebaseWhen": "behind-base-branch",
+  "prConcurrentLimit": 5
 }
