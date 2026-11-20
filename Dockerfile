@@ -22,7 +22,7 @@ LABEL \
   org.opencontainers.image.description=""
 
 USER root
-RUN apk upgrade --no-cache && apk add --no-cache 'libcrypto3>=3.5.9-r1' 'libssl3>=3.5.9-r1'
+RUN apk upgrade --no-cache && apk add --no-cache 'libcrypto3>=3.5.9-r1' 'libssl3>=3.5.9-r1' && rm /docker-entrypoint.d/10-listen-on-ipv6-by-default.sh
 USER nginx
 
 COPY --from=builder /app/public /usr/share/nginx/html
